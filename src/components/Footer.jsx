@@ -1,17 +1,17 @@
-import {
-  TiSocialLinkedinCircular,
-  TiSocialGithubCircular,
-  TiSocialTwitterCircular,
-} from 'react-icons/ti'
+// import {
+//   TiSocialLinkedinCircular,
+//   TiSocialGithubCircular,
+//   TiSocialTwitterCircular,
+// } from 'react-icons/ti'
 
 
 const Footer = () => {
   return (
     <footer>
       <div>
-          <TiSocialLinkedinCircular />
+          {/* <TiSocialLinkedinCircular />
           <TiSocialGithubCircular />
-          <TiSocialTwitterCircular />
+          <TiSocialTwitterCircular /> */}
       </div>
     </footer>
   )

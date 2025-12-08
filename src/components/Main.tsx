@@ -1,6 +1,8 @@
 import { useState, useEffect, cache } from "react"; // cache...
 import { fetchCountryData } from "../services/countryService";
 import { getCountryNameAndFlag } from "../utils/countryUtils";
+import { Map } from "./Map";
+import { data } from "../utils/data"
 
 type CountryProps = { //hm..
   name: string;
@@ -54,9 +56,10 @@ const Main = () => {
             <h3 className='country_name'>{currentCountry.name.toUpperCase()}</h3>
             <div className='country_text'>
             </div>
-          </div>
+          </div> 
         ) : (
-          <p>Click the button to see a country.</p>
+          //<p>Click the button to see a country.</p>
+          <Map data={data} width={700} height={400} />
         )}
       </div>  
     </div>
